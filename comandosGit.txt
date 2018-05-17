@@ -1,0 +1,14 @@
+git clone repo (clona el repositorio)
+
+//cd al directorio del repo ej :
+cd PunterosEnC-
+
+git status
+//si hay rojo tengo que poner el comando
+git add .
+
+git commit -m "mensaje de por que se guarda"
+
+.....(es un bucle que se puede hacer varias veces )....
+
+git push origin master -f
