@@ -2,7 +2,7 @@
 #include <stdlib.h>
 void Intercambiar(int num1,int num2);
 void IntercambiarPuntero(int *num1,int *num2);
-
+void PonerEnCero(int *num1,int *num2);
 
 int main()
 {
@@ -11,12 +11,19 @@ int main()
 
     edadUno=22;
     edadDos=99;
+    PonerEnCero(&edadDos);
     //Intercambiar(edadUno,edadDos);
     IntercambiarPuntero(&edadUno,&edadDos);
     printf("\n edad 1: %d",edadUno);
     printf("\n edad 2: %d",edadDos);
     return 0;
 }
+
+void PonerEnCero(int *num1)
+{
+    *num1=0
+}
+
 
 void Intercambiar(int num1,int num2)
 {
